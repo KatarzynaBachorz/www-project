@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px 15px;
+}
+
+header{
+    background-color: #f4f4f4;
+}
+
+
+#header-2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+   
+.logoheader-2{
+    position: absolute;
+    bottom: 0;
+    left: 2;
+    background: rgba(255, 255, 255, 0.4)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5em;
+    padding: 10px 0px;
+}
+
+p{
+    padding-bottom: 1%;
+}
+
+#social{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    width: 9em;
+    margin-top: -2.5em;
+    padding: 0.5em;
+    background-color: #fff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    border: 0.5em #fff solid;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+  }
+
+  #social li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+  }
+
+.container{
+    width:75%;
+    margin: auto;
+}
+
+.box-1{
+    background-color: #ccc;
+    color: #fff;
+    text-shadow: 1px 5px 15px #333;
+    border: none;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.box-1 h1{
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+    word-spacing: 0.7em;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+}
+
+.box-2{
+    border-left: 5px #ccc dotted;
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+}
+
+.box-2 h3{
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+}
+
+
+.gallery-small h5{
+    text-align: center;
+}
+
+.decorate{
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+}
+
+@media (min-width: 700px) {
+    .image-area{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 1em;
+        justify-content: center;
+    }
+}
+
+
+.single-img{
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block;
+    width: 50%vw;
+    height: 50%vh;
+    margin: 1em;
+}
+
+
+.categories{
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.categories li{
+    padding:10px;
+    border-bottom: 5px #ccc solid;
+}
+
+.categories li:last-child{
+    border-bottom: none;
+}
+
+.categories ul{
+    background: #ccc;
+    padding: 0.3rem;
+    list-style-image: url("images/icon.png");
+    list-style-position: inside;
+}
+  
+.categories ul li{
+    background: #f4f4f4;
+}
+
+.categories a{
+    text-decoration: none;
+    color: #000;
+}
+
+.categories a:hover{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: hsl(16, 85%, 66%);
+}
+
+.package{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.package h3{
+  color:#fff;
+}
+
+.form-1{
+    padding: 0px 10px 30px 10px;
+    float:right;
+}
+
+.form-1 .group{
+    padding-bottom: 15px;
+}
+
+.form-1 label{
+    display: block;
+}
+
+.form-1 input[type="text"], .form-1 textarea{
+    padding: 8px;
+    width:100%;
+}
+
+.form-1 input[type="submit"]{
+    background-color: #333;
+    color:#fff;
+    border: none;
+    padding: 8px 8px;
+}
+
+.button{
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 5px 5px;
+    margin: 5px 5x 10px 5px;
+}
+.button:hover{
+    text-decoration: none;
+    background-color: #555;
+    transition: all 0.5s ease 0s;
+    color: #ccc
+}
+
+
+.photography{
+      padding: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+}
+
+@media (min-width: 900px){
+        .photography{
+            display: flex;
+            justify-content: space-between;
+    }
+}
+
+
+#main-footer{
+    clear:both;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 1fr;
+    background-color: #ccc;
+    align-items: center center;
+    padding-top: 1rem;
+    font-size: 1.2vw;
+    font-size: 2vmin;
+}
+  
+.scroll, .scroll:hover{
+      text-decoration: none;
+      color: #000;
+      padding-left: 2rem;
+}
+
+.scroll:hover{
+      color: hsl(16, 85%, 66%);
+      transition: all 0.3s ease 0s;
+}
+
+  
+
+
+  
